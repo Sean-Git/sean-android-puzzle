@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp" >
+
+   <ImageView 
+       android:id="@+id/img_game"
+       android:layout_width="315dp"
+       android:layout_height="420dp"
+       android:scaleType="centerCrop"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/ic_launcher" />
+
+   <Button
+       android:id="@+id/btn_start"
+       android:layout_below="@id/img_game"       
+       android:layout_width="100dp"
+       android:layout_height="wrap_content"
+       android:text="开始" />
+   
+   <TextView 
+       android:id="@+id/txt_step"
+       android:layout_toRightOf="@id/btn_start"
+       android:layout_alignBaseline="@id/btn_start"
+       android:layout_width="50dp"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:text="步数： "
+       android:textSize="16sp" />
+   
+   <TextView 
+       android:id="@+id/txt_count"
+       android:layout_toRightOf="@id/txt_step"
+       android:layout_alignBaseline="@id/btn_start"
+       android:layout_width="50dp"
+       android:layout_height="wrap_content"
+       android:text="0"
+       android:textSize="16sp" />
+   
+   <TextView 
+       android:id="@+id/txt_level0"
+       android:layout_toRightOf="@id/txt_count"
+       android:layout_alignBaseline="@id/btn_start"
+       android:layout_width="50dp"
+       android:layout_height="wrap_content"
+       android:text="等级："
+       android:textSize="16sp" />
+   
+	<TextView 
+       android:id="@+id/txt_level"
+       android:layout_toRightOf="@id/txt_level0"
+       android:layout_alignBaseline="@id/btn_start"
+       android:layout_width="50dp"
+       android:layout_height="wrap_content"
+       android:text="初级"
+       android:textSize="16sp" />
+
+</RelativeLayout>
